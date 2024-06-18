@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #operador, #num1, #num2{
+            text-align: center;
+        }
+        div{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Calculadora Básica
+
+    </h1>
+
+    <script>
+        //Criação de variaveis e recebimento de valores
+        var num1 = Number(prompt("Digite o 1° número: "))
+        var operador = (prompt("Digite o operador:\n(+) Soma\n(-) Subtração\n(*) Multiplicação\n(/) Divisão"))
+        var num2 = Number(prompt("Digite o 2° número: "))
+
+        //Variavel 'operador' determina qual opereção foi escolhida pelo usuario
+        switch(operador){
+            //Soma
+            case '+':
+                alert(`A soma de ${num1} mais ${num2} é igual a ${num1 + num2}`)
+                break;
+            //Subtração
+            case '-':
+            alert(`A subtração de ${num1} menos ${num2} é igual a ${num1 - num2}`)
+            break;
+            //Multiplicação
+            case '*':
+            alert(`O produto entre ${num1} e ${num2} é igual a ${num1 * num2}`)
+                break;
+            //Divisão15
+            case '/':
+                if(num2 < 0){
+                    alert("Divisor Inválido!!")
+                }
+                else{
+                    alert(`A divisão de ${num1} por ${num2} é igual a ${num1 / num2}`)
+                break; 
+                    }
+
+        }
+    
+    </script>
+</body>
+</html>

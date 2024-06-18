@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achar Média</title>
+</head>
+<body>
+    <h1>Calculadora de Média</h1>
+    <h2>A média é</h2><h2 id="res"></h2>
+    <script>
+        alert("Vamos calcular a média de 3 notas")
+        var nota1 = Number(prompt("Digite a primeira nota: "))
+        var nota2 = Number(prompt("Digite a segunda nota: "))
+        var nota3 = Number(prompt("Digite a terceira nota: "))
+        media = (nota1 + nota2+ nota3) /3
+        res = document.getElementById('res')
+        res.innerText = media
+</script>
+</body>
+</html>
